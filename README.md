@@ -1022,7 +1022,36 @@ Number of Fisher Scoring iterations: 4
 
 ### Assignment #1 - Due Friday 9/16/22
 
-1. Consider the following distribution of *y* representing the number of prior spells of incarceration for a population of incoming prison inmates. With samples of size *N* = 300, 
+1. We have the following 2x2 contingency table:
+
+```Rout
+> table(y,x)
+   x
+y     0   1
+  0 502 444
+  1 149 155
+>
+```
+
+You can create a rows-and-columns dataset from this table using the following code:
+
+```Rout
+y <- c(rep(0,502),rep(0,444),rep(1,149),rep(1,155))
+x <- c(rep(0,502),rep(1,444),rep(0,149),rep(1,155))
+table(y,x)
+```
+
+Now, with this table in hand, carry out the following tasks:
+
+* estimate p(y=1|x=1) and p(y=1|x=0)
+* calculate the difference between the fractions (delta)
+* calculate the standard error of delta
+* calculate the relative risk
+* calculate the odds ratio, the log odds ratio, and the standard error of the log-odds ratio
+* compare your results above to what you obtain from the linear probability and logistic regression models
+* calculate and interpret the Yule's Q statistic for the table
+
+2. Consider the following distribution of *y* representing the number of prior spells of incarceration for a population of incoming prison inmates. With samples of size *N* = 300, 
 
 * Estimate the population mean. 
 * Verify that the average of the sample means is close to the population mean. 
@@ -1036,8 +1065,8 @@ y <- c(rep(0,4886),rep(1,16339),rep(2,25573),rep(3,24704),rep(4,16297),rep(5,816
        rep(8,164),rep(9,31),rep(10,2),rep(11,1))
 ```
 
-2. For the efficiency problem above, convince yourself that the mean is still more efficient than the median even when the sample size is large (i.e., N = 1000).
+3. For the efficiency problem above, convince yourself that the mean is still more efficient than the median even when the sample size is large (i.e., N = 1000).
 
-3. The idea of bias is that inaccuracy doesn't improve with larger sample sizes. Increase the (repeated) sample size by a factor of 2 and see how your conclusions change (if at all).
+4. The idea of bias is that inaccuracy doesn't improve with larger sample sizes. Increase the (repeated) sample size by a factor of 2 and see how your conclusions change (if at all).
 
-4. For the consistency problem, change the population intercept from zero to -0.25 and reestimate the experiments. Describe how (if at all) your conclusions change.
+5. For the consistency problem, change the population intercept from zero to -0.25 and reestimate the experiments. Describe how (if at all) your conclusions change.
