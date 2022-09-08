@@ -1020,7 +1020,7 @@ Number of Fisher Scoring iterations: 4
 > 
 ```
 
-### Assignment #1 - Due Friday 9/16/22
+### Assignment #1 - Monday 9/19/22 (end of the day)
 
 1. We have the following 2x2 contingency table:
 
