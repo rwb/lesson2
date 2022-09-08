@@ -332,9 +332,9 @@ and the output is:
 <img src="yfig3.png" width="800px">
 </p>
 
-### Assignment #4 - Due Tuesday 2/11/20
+### Assignment #1 - Due Friday 9/16/22
 
-Consider the following distribution of *y* representing the number of prior spells of incarceration for a population of incoming prison inmates. With samples of size *N* = 300, 
+1. Consider the following distribution of *y* representing the number of prior spells of incarceration for a population of incoming prison inmates. With samples of size *N* = 300, 
 
 * Estimate the population mean. 
 * Verify that the average of the sample means is close to the population mean. 
